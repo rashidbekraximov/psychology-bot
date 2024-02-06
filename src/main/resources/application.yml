@@ -1,0 +1,20 @@
+server:
+  port: 7171
+
+spring:
+  datasource:
+#    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://185.217.131.171:2121/postgres?useUnicode=yes&characterEncoding=UTF-8
+    username: postgres
+    password: admin
+#    password: 123
+  main:
+      allow-circular-references: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: false
+    properties:
+      hibernate:
+        show_sql: true
